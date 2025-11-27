@@ -45,5 +45,5 @@ jobs:
       - name: Upload signed output
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ needs.build.outputs.artifact-name }}
+          name: ParsecVDisplay-v1.0.2-77599ebf
           path: distro/publish/
