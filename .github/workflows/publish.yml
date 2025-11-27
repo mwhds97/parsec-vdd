@@ -36,14 +36,3 @@ jobs:
           name: setup-installer
           path: |
             distro/out/*.exe
-
-      - name: Delete unwanted artifacts
-        uses: geekyeggo/delete-artifact@v5
-        with:
-          name: "*"
-
-      - name: Upload signed output
-        uses: actions/upload-artifact@v4
-        with:
-          name: ParsecVDisplay-v1.0.2-77599ebf
-          path: distro/publish/
