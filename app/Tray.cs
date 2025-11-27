@@ -207,7 +207,7 @@ namespace ParsecVDisplay
                 var amount = savedCount - displays.Count;
 
                 for (int i = 0; i < amount; i++)
-                    Controller.AddDisplay(out var _);
+                    Vdd.Controller.AddDisplay();
             }
         }
 
